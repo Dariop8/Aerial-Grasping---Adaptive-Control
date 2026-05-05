@@ -1,0 +1,3 @@
+[console_scripts]
+adaptive_joint_controller = aerial_grasping_control.adaptive_joint_controller:main
+
