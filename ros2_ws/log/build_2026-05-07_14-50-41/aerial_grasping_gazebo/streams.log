@@ -1,0 +1,123 @@
+[0.338s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo -DCMAKE_INSTALL_PREFIX=/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo
+[0.458s] -- The C compiler identification is GNU 11.4.0
+[0.550s] -- The CXX compiler identification is GNU 11.4.0
+[0.559s] -- Detecting C compiler ABI info
+[0.624s] -- Detecting C compiler ABI info - done
+[0.630s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.630s] -- Detecting C compile features
+[0.630s] -- Detecting C compile features - done
+[0.632s] -- Detecting CXX compiler ABI info
+[0.702s] -- Detecting CXX compiler ABI info - done
+[0.709s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.709s] -- Detecting CXX compile features
+[0.709s] -- Detecting CXX compile features - done
+[0.713s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.962s] -- Found Python3: /home/dario/miniconda3/bin/python3 (found version "3.12.9") found components: Interpreter 
+[1.047s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.080s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.084s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.090s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.100s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.111s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.143s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.145s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.228s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.246s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.278s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.284s] -- Looking for pthread.h
+[1.359s] -- Looking for pthread.h - found
+[1.360s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.417s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.419s] -- Found Threads: TRUE  
+[1.459s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.468s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.468s] -- Checking for module 'bullet>=2.82'
+[1.487s] --   Found bullet, version 3.05
+[1.582s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.628s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.644s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.665s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.681s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.685s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.694s] -- Searching for dependencies of ignition-math6
+[1.696s] -- Looking for OGRE...
+[1.696s] -- OGRE_PREFIX_WATCH changed.
+[1.700s] -- Checking for module 'OGRE'
+[1.711s] --   Found OGRE, version 1.9.0
+[1.747s] -- Found Ogre Ghadamon (1.9.0)
+[1.752s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.759s] -- Looking for OGRE_Paging...
+[1.762s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.762s] -- Looking for OGRE_Terrain...
+[1.765s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.766s] -- Looking for OGRE_Property...
+[1.769s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.769s] -- Looking for OGRE_RTShaderSystem...
+[1.773s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.773s] -- Looking for OGRE_Volume...
+[1.776s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.776s] -- Looking for OGRE_Overlay...
+[1.779s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.842s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.844s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.844s] -- Searching for dependencies of ignition-transport8
+[1.857s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.864s] -- Checking for module 'uuid'
+[1.878s] --   Found uuid, version 2.37.2
+[1.910s] -- Found UUID: TRUE  
+[1.912s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.912s] -- Searching for dependencies of ignition-msgs5
+[1.927s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.931s] -- Checking for module 'tinyxml2'
+[1.942s] --   Found tinyxml2, version 9.0.0
+[1.975s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.978s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.979s] -- Searching for dependencies of ignition-common3
+[1.979s] -- Looking for dlfcn.h - found
+[1.980s] -- Looking for libdl - found
+[1.981s] -- Found DL: TRUE  
+[1.988s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.989s] -- Searching for <ignition-common3> component [graphics]
+[1.990s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.990s] -- Searching for dependencies of ignition-common3-graphics
+[1.990s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.993s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.993s] -- Searching for dependencies of ignition-fuel_tools4
+[2.060s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.067s] -- Checking for module 'jsoncpp'
+[2.078s] --   Found jsoncpp, version 1.9.5
+[2.109s] -- Found JSONCPP: TRUE  
+[2.115s] -- Checking for module 'libzip'
+[2.127s] --   Found libzip, version 1.7.3
+[2.158s] -- Found ZIP: TRUE  
+[2.158s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.159s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.159s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.162s] -- Gazebo version: 11.10
+[2.162s] -- Checking for module 'tbb'
+[2.174s] --   Found tbb, version 2021.5.0
+[2.284s] -- Configuring done
+[2.297s] [33mCMake Warning at CMakeLists.txt:24 (add_library):
+[2.297s]   Cannot generate a safe runtime search path for target motor_thrust_plugin
+[2.297s]   because files in some directories may conflict with libraries in implicit
+[2.298s]   directories:
+[2.298s] 
+[2.298s]     runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.298s]       /home/dario/miniconda3/lib
+[2.298s] 
+[2.298s]   Some of these libraries may not be found correctly.
+[2.298s] 
+[2.298s] [0m
+[2.298s] -- Generating done
+[2.302s] -- Build files have been written to: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo
+[2.311s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo -DCMAKE_INSTALL_PREFIX=/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo
+[2.312s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo -- -j22 -l22
+[2.357s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_thrust_plugin.dir/src/motor_thrust_plugin.cpp.o[0m
+[9.021s] [01m[K/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo/src/motor_thrust_plugin.cpp:[m[K In destructor ‘[01m[Kvirtual gazebo::MotorThrustPlugin::~MotorThrustPlugin()[m[K’:
+[9.021s] [01m[K/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo/src/motor_thrust_plugin.cpp:137:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Node[m[K’ {aka ‘[01m[Kclass rclcpp::Node[m[K’} has no member named ‘[01m[Kshutdown[m[K’
+[9.021s]   137 |       node_->[01;31m[Kshutdown[m[K();
+[9.021s]       |              [01;31m[K^~~~~~~~[m[K
+[11.421s] gmake[2]: *** [CMakeFiles/motor_thrust_plugin.dir/build.make:76: CMakeFiles/motor_thrust_plugin.dir/src/motor_thrust_plugin.cpp.o] Error 1
+[11.421s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_thrust_plugin.dir/all] Error 2
+[11.423s] gmake: *** [Makefile:146: all] Error 2
+[11.425s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo -- -j22 -l22

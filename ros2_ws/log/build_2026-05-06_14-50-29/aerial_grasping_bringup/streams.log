@@ -1,0 +1,33 @@
+[0.540s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_bringup': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aerial_grasping_bringup build --build-base /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build install --record /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/install.log --single-version-externally-managed install_data
+[0.700s] running egg_info
+[0.700s] creating ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info
+[0.700s] writing ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/PKG-INFO
+[0.700s] writing dependency_links to ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/dependency_links.txt
+[0.700s] writing entry points to ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/entry_points.txt
+[0.701s] writing requirements to ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/requires.txt
+[0.701s] writing top-level names to ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/top_level.txt
+[0.701s] writing manifest file '../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/SOURCES.txt'
+[0.701s] reading manifest file '../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/SOURCES.txt'
+[0.701s] writing manifest file '../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info/SOURCES.txt'
+[0.701s] running build
+[0.701s] running build_py
+[0.701s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build
+[0.701s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build/lib
+[0.701s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build/lib/aerial_grasping_bringup
+[0.701s] copying aerial_grasping_bringup/__init__.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build/lib/aerial_grasping_bringup
+[0.702s] running install
+[0.702s] running install_lib
+[0.702s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages/aerial_grasping_bringup
+[0.702s] copying /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build/lib/aerial_grasping_bringup/__init__.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages/aerial_grasping_bringup
+[0.702s] byte-compiling /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages/aerial_grasping_bringup/__init__.py to __init__.cpython-310.pyc
+[0.702s] running install_data
+[0.702s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/share/ament_index
+[0.702s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/share/ament_index/resource_index
+[0.702s] creating /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/share/ament_index/resource_index/packages
+[0.702s] copying resource/aerial_grasping_bringup -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/share/ament_index/resource_index/packages
+[0.702s] copying package.xml -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/share/aerial_grasping_bringup
+[0.702s] running install_egg_info
+[0.703s] Copying ../../build/aerial_grasping_bringup/aerial_grasping_bringup.egg-info to /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages/aerial_grasping_bringup-0.0.0-py3.10.egg-info
+[0.703s] running install_scripts
+[0.716s] writing list of installed files to '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/install.log'
+[0.732s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_bringup' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aerial_grasping_bringup build --build-base /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/build install --record /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_bringup/install.log --single-version-externally-managed install_data

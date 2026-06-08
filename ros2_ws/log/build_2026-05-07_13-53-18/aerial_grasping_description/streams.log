@@ -1,0 +1,26 @@
+[0.343s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description -- -j22 -l22
+[0.382s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description -- -j22 -l22
+[0.396s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description
+[0.400s] -- Install configuration: ""
+[0.400s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/urdf
+[0.400s] -- Installing: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/urdf/drone_arm.urdf
+[0.400s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/config
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/config/controllers.yaml
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/meshes
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/meshes/droneModel_binary.stl
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/package_run_dependencies/aerial_grasping_description
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/parent_prefix_path/aerial_grasping_description
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/ament_prefix_path.sh
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/ament_prefix_path.dsv
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/path.sh
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/path.dsv
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.bash
+[0.402s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.sh
+[0.402s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.zsh
+[0.402s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.dsv
+[0.402s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/package.dsv
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/packages/aerial_grasping_description
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/cmake/aerial_grasping_descriptionConfig.cmake
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/cmake/aerial_grasping_descriptionConfig-version.cmake
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/package.xml
+[0.403s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description

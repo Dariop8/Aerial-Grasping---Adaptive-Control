@@ -1,1 +1,40 @@
-/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_description/config/controllers.yaml
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 100
+#     use_sim_time: true
+
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster
+
+#     adaptive_effort_controller:
+#       type: forward_command_controller/ForwardCommandController
+
+# joint_state_broadcaster:
+#   ros__parameters:
+#     use_sim_time: true
+
+# adaptive_effort_controller:
+#   ros__parameters:
+#     joints:
+#       - joint1
+#       - joint2
+
+#     interface_name: effort
+
+
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    arm_effort_controller:
+      type: effort_controllers/JointGroupEffortController
+
+
+arm_effort_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2

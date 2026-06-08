@@ -1,0 +1,219 @@
+[0.000000] (-) TimerEvent: {}
+[0.000162] (-) JobUnselected: {'identifier': 'aerial_grasping_bringup'}
+[0.000256] (aerial_grasping_control) JobQueued: {'identifier': 'aerial_grasping_control', 'dependencies': OrderedDict()}
+[0.000429] (aerial_grasping_description) JobQueued: {'identifier': 'aerial_grasping_description', 'dependencies': OrderedDict()}
+[0.000518] (aerial_grasping_gazebo) JobQueued: {'identifier': 'aerial_grasping_gazebo', 'dependencies': OrderedDict()}
+[0.000534] (aerial_grasping_control) JobStarted: {'identifier': 'aerial_grasping_control'}
+[0.006367] (aerial_grasping_description) JobStarted: {'identifier': 'aerial_grasping_description'}
+[0.008115] (aerial_grasping_gazebo) JobStarted: {'identifier': 'aerial_grasping_gazebo'}
+[0.099835] (-) TimerEvent: {}
+[0.195322] (aerial_grasping_description) JobProgress: {'identifier': 'aerial_grasping_description', 'progress': 'cmake'}
+[0.196042] (aerial_grasping_description) JobProgress: {'identifier': 'aerial_grasping_description', 'progress': 'build'}
+[0.196395] (aerial_grasping_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description', '--', '-j22', '-l22'], 'cwd': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dario'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dario'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/dario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dario'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/dario/.pixi/bin:/home/dario/miniconda3/condabin:/home/dario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dario-Yoga-Pro-7-14IMH9:@/tmp/.ICE-unix/2709,unix/dario-Yoga-Pro-7-14IMH9:/tmp/.ICE-unix/2709'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c9f32886_0015_4e77_99da_d64799d95caf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O4NPQ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.153'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/dario/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/dario/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199300] (aerial_grasping_gazebo) JobProgress: {'identifier': 'aerial_grasping_gazebo', 'progress': 'cmake'}
+[0.200039] (-) TimerEvent: {}
+[0.200498] (aerial_grasping_gazebo) JobProgress: {'identifier': 'aerial_grasping_gazebo', 'progress': 'build'}
+[0.200746] (aerial_grasping_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo', '--', '-j22', '-l22'], 'cwd': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dario'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dario'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/dario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dario'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/dario/.pixi/bin:/home/dario/miniconda3/condabin:/home/dario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dario-Yoga-Pro-7-14IMH9:@/tmp/.ICE-unix/2709,unix/dario-Yoga-Pro-7-14IMH9:/tmp/.ICE-unix/2709'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c9f32886_0015_4e77_99da_d64799d95caf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O4NPQ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.153'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/dario/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/dario/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.245691] (aerial_grasping_description) CommandEnded: {'returncode': 0}
+[0.246563] (aerial_grasping_description) JobProgress: {'identifier': 'aerial_grasping_description', 'progress': 'install'}
+[0.254695] (aerial_grasping_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description'], 'cwd': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dario'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dario'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/dario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dario'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/dario/.pixi/bin:/home/dario/miniconda3/condabin:/home/dario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dario-Yoga-Pro-7-14IMH9:@/tmp/.ICE-unix/2709,unix/dario-Yoga-Pro-7-14IMH9:/tmp/.ICE-unix/2709'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c9f32886_0015_4e77_99da_d64799d95caf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O4NPQ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.153'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/dario/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/dario/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.262080] (aerial_grasping_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.262495] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/urdf\n'}
+[0.262615] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/urdf/drone_arm.urdf\n'}
+[0.262692] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/config\n'}
+[0.262789] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/config/controllers.yaml\n'}
+[0.262903] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/meshes\n'}
+[0.262968] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/meshes/droneModel_binary.stl\n'}
+[0.263033] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/package_run_dependencies/aerial_grasping_description\n'}
+[0.263146] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/parent_prefix_path/aerial_grasping_description\n'}
+[0.263230] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/ament_prefix_path.sh\n'}
+[0.263289] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/ament_prefix_path.dsv\n'}
+[0.263348] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/path.sh\n'}
+[0.263410] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/environment/path.dsv\n'}
+[0.263472] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.bash\n'}
+[0.263532] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.sh\n'}
+[0.263607] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.zsh\n'}
+[0.263686] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/local_setup.dsv\n'}
+[0.263746] (aerial_grasping_description) StdoutLine: {'line': b'-- Installing: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/package.dsv\n'}
+[0.263849] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/ament_index/resource_index/packages/aerial_grasping_description\n'}
+[0.263947] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/cmake/aerial_grasping_descriptionConfig.cmake\n'}
+[0.264012] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/cmake/aerial_grasping_descriptionConfig-version.cmake\n'}
+[0.264074] (aerial_grasping_description) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_description/share/aerial_grasping_description/package.xml\n'}
+[0.265518] (aerial_grasping_description) CommandEnded: {'returncode': 0}
+[0.275642] (aerial_grasping_description) JobEnded: {'identifier': 'aerial_grasping_description', 'rc': 0}
+[0.300126] (-) TimerEvent: {}
+[0.322491] (aerial_grasping_gazebo) StdoutLine: {'line': b'[ 75%] Built target grasp_attach_plugin\n'}
+[0.322753] (aerial_grasping_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/motor_thrust_plugin.dir/src/motor_thrust_plugin.cpp.o\x1b[0m\n'}
+[0.400225] (-) TimerEvent: {}
+[0.437250] (aerial_grasping_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/aerial_grasping_control', 'build', '--build-base', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/build', 'install', '--record', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dario', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dario', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/dario', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2746', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dario', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dario', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/dario/.pixi/bin:/home/dario/miniconda3/condabin:/home/dario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dario-Yoga-Pro-7-14IMH9:@/tmp/.ICE-unix/2709,unix/dario-Yoga-Pro-7-14IMH9:/tmp/.ICE-unix/2709', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c9f32886_0015_4e77_99da_d64799d95caf', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.O4NPQ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.153', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/dario/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/dario/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.500333] (-) TimerEvent: {}
+[0.582402] (aerial_grasping_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.582737] (aerial_grasping_control) StdoutLine: {'line': b'writing ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/PKG-INFO\n'}
+[0.582968] (aerial_grasping_control) StdoutLine: {'line': b'writing dependency_links to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/dependency_links.txt\n'}
+[0.583038] (aerial_grasping_control) StdoutLine: {'line': b'writing entry points to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/entry_points.txt\n'}
+[0.583098] (aerial_grasping_control) StdoutLine: {'line': b'writing requirements to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/requires.txt\n'}
+[0.583317] (aerial_grasping_control) StdoutLine: {'line': b'writing top-level names to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/top_level.txt\n'}
+[0.584033] (aerial_grasping_control) StdoutLine: {'line': b"reading manifest file '../../build/aerial_grasping_control/aerial_grasping_control.egg-info/SOURCES.txt'\n"}
+[0.584859] (aerial_grasping_control) StdoutLine: {'line': b"writing manifest file '../../build/aerial_grasping_control/aerial_grasping_control.egg-info/SOURCES.txt'\n"}
+[0.584929] (aerial_grasping_control) StdoutLine: {'line': b'running build\n'}
+[0.584983] (aerial_grasping_control) StdoutLine: {'line': b'running build_py\n'}
+[0.585166] (aerial_grasping_control) StdoutLine: {'line': b'copying aerial_grasping_control/full_adaptive_controller.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/build/lib/aerial_grasping_control\n'}
+[0.585503] (aerial_grasping_control) StdoutLine: {'line': b'running install\n'}
+[0.585559] (aerial_grasping_control) StdoutLine: {'line': b'running install_lib\n'}
+[0.585936] (aerial_grasping_control) StdoutLine: {'line': b'copying /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/build/lib/aerial_grasping_control/full_adaptive_controller.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control\n'}
+[0.586164] (aerial_grasping_control) StdoutLine: {'line': b'byte-compiling /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control/full_adaptive_controller.py to full_adaptive_controller.cpython-310.pyc\n'}
+[0.589181] (aerial_grasping_control) StdoutLine: {'line': b'running install_data\n'}
+[0.589365] (aerial_grasping_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.590182] (aerial_grasping_control) StdoutLine: {'line': b"removing '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.590339] (aerial_grasping_control) StdoutLine: {'line': b'Copying ../../build/aerial_grasping_control/aerial_grasping_control.egg-info to /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control-0.0.0-py3.10.egg-info\n'}
+[0.590819] (aerial_grasping_control) StdoutLine: {'line': b'running install_scripts\n'}
+[0.600389] (-) TimerEvent: {}
+[0.601710] (aerial_grasping_control) StdoutLine: {'line': b'Installing adaptive_joint_controller script to /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/aerial_grasping_control\n'}
+[0.602177] (aerial_grasping_control) StdoutLine: {'line': b"writing list of installed files to '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/install.log'\n"}
+[0.616779] (aerial_grasping_control) CommandEnded: {'returncode': 0}
+[0.624028] (aerial_grasping_control) JobEnded: {'identifier': 'aerial_grasping_control', 'rc': 0}
+[0.700511] (-) TimerEvent: {}
+[0.800781] (-) TimerEvent: {}
+[0.901122] (-) TimerEvent: {}
+[1.001474] (-) TimerEvent: {}
+[1.101842] (-) TimerEvent: {}
+[1.202198] (-) TimerEvent: {}
+[1.302527] (-) TimerEvent: {}
+[1.402871] (-) TimerEvent: {}
+[1.503209] (-) TimerEvent: {}
+[1.603554] (-) TimerEvent: {}
+[1.703888] (-) TimerEvent: {}
+[1.804157] (-) TimerEvent: {}
+[1.904427] (-) TimerEvent: {}
+[2.004696] (-) TimerEvent: {}
+[2.104970] (-) TimerEvent: {}
+[2.205288] (-) TimerEvent: {}
+[2.305619] (-) TimerEvent: {}
+[2.405944] (-) TimerEvent: {}
+[2.506286] (-) TimerEvent: {}
+[2.606650] (-) TimerEvent: {}
+[2.707001] (-) TimerEvent: {}
+[2.807343] (-) TimerEvent: {}
+[2.907684] (-) TimerEvent: {}
+[3.008021] (-) TimerEvent: {}
+[3.108366] (-) TimerEvent: {}
+[3.208730] (-) TimerEvent: {}
+[3.309089] (-) TimerEvent: {}
+[3.409420] (-) TimerEvent: {}
+[3.509767] (-) TimerEvent: {}
+[3.610128] (-) TimerEvent: {}
+[3.710440] (-) TimerEvent: {}
+[3.810778] (-) TimerEvent: {}
+[3.911098] (-) TimerEvent: {}
+[4.011405] (-) TimerEvent: {}
+[4.111731] (-) TimerEvent: {}
+[4.212044] (-) TimerEvent: {}
+[4.312351] (-) TimerEvent: {}
+[4.412660] (-) TimerEvent: {}
+[4.512935] (-) TimerEvent: {}
+[4.613252] (-) TimerEvent: {}
+[4.713581] (-) TimerEvent: {}
+[4.813883] (-) TimerEvent: {}
+[4.914246] (-) TimerEvent: {}
+[5.014587] (-) TimerEvent: {}
+[5.114930] (-) TimerEvent: {}
+[5.215282] (-) TimerEvent: {}
+[5.315619] (-) TimerEvent: {}
+[5.415968] (-) TimerEvent: {}
+[5.516317] (-) TimerEvent: {}
+[5.616662] (-) TimerEvent: {}
+[5.717009] (-) TimerEvent: {}
+[5.817374] (-) TimerEvent: {}
+[5.917736] (-) TimerEvent: {}
+[6.018087] (-) TimerEvent: {}
+[6.118435] (-) TimerEvent: {}
+[6.218799] (-) TimerEvent: {}
+[6.319149] (-) TimerEvent: {}
+[6.419491] (-) TimerEvent: {}
+[6.519864] (-) TimerEvent: {}
+[6.620219] (-) TimerEvent: {}
+[6.720555] (-) TimerEvent: {}
+[6.820899] (-) TimerEvent: {}
+[6.921242] (-) TimerEvent: {}
+[7.021602] (-) TimerEvent: {}
+[7.121946] (-) TimerEvent: {}
+[7.222294] (-) TimerEvent: {}
+[7.322648] (-) TimerEvent: {}
+[7.422986] (-) TimerEvent: {}
+[7.523331] (-) TimerEvent: {}
+[7.623673] (-) TimerEvent: {}
+[7.723988] (-) TimerEvent: {}
+[7.824327] (-) TimerEvent: {}
+[7.924651] (-) TimerEvent: {}
+[8.025083] (-) TimerEvent: {}
+[8.125440] (-) TimerEvent: {}
+[8.225839] (-) TimerEvent: {}
+[8.326151] (-) TimerEvent: {}
+[8.426440] (-) TimerEvent: {}
+[8.526790] (-) TimerEvent: {}
+[8.627152] (-) TimerEvent: {}
+[8.727518] (-) TimerEvent: {}
+[8.827907] (-) TimerEvent: {}
+[8.928259] (-) TimerEvent: {}
+[9.028554] (-) TimerEvent: {}
+[9.128853] (-) TimerEvent: {}
+[9.229188] (-) TimerEvent: {}
+[9.329528] (-) TimerEvent: {}
+[9.429884] (-) TimerEvent: {}
+[9.530169] (-) TimerEvent: {}
+[9.630464] (-) TimerEvent: {}
+[9.730813] (-) TimerEvent: {}
+[9.831087] (-) TimerEvent: {}
+[9.931374] (-) TimerEvent: {}
+[10.031646] (-) TimerEvent: {}
+[10.131975] (-) TimerEvent: {}
+[10.232293] (-) TimerEvent: {}
+[10.332588] (-) TimerEvent: {}
+[10.432889] (-) TimerEvent: {}
+[10.533209] (-) TimerEvent: {}
+[10.633528] (-) TimerEvent: {}
+[10.733809] (-) TimerEvent: {}
+[10.834147] (-) TimerEvent: {}
+[10.934483] (-) TimerEvent: {}
+[11.034826] (-) TimerEvent: {}
+[11.135151] (-) TimerEvent: {}
+[11.235494] (-) TimerEvent: {}
+[11.335868] (-) TimerEvent: {}
+[11.436218] (-) TimerEvent: {}
+[11.536625] (-) TimerEvent: {}
+[11.637067] (-) TimerEvent: {}
+[11.737423] (-) TimerEvent: {}
+[11.837781] (-) TimerEvent: {}
+[11.878491] (aerial_grasping_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_thrust_plugin.so\x1b[0m\n'}
+[11.937889] (-) TimerEvent: {}
+[12.038191] (-) TimerEvent: {}
+[12.138490] (-) TimerEvent: {}
+[12.238813] (-) TimerEvent: {}
+[12.339156] (-) TimerEvent: {}
+[12.427186] (aerial_grasping_gazebo) StdoutLine: {'line': b'[100%] Built target motor_thrust_plugin\n'}
+[12.439253] (-) TimerEvent: {}
+[12.441124] (aerial_grasping_gazebo) CommandEnded: {'returncode': 0}
+[12.442179] (aerial_grasping_gazebo) JobProgress: {'identifier': 'aerial_grasping_gazebo', 'progress': 'install'}
+[12.442746] (aerial_grasping_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo'], 'cwd': '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dario'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dario'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/dario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dario'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/dario/.pixi/bin:/home/dario/miniconda3/condabin:/home/dario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dario-Yoga-Pro-7-14IMH9:@/tmp/.ICE-unix/2709,unix/dario-Yoga-Pro-7-14IMH9:/tmp/.ICE-unix/2709'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c9f32886_0015_4e77_99da_d64799d95caf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O4NPQ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.153'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/dario/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/dario/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.450879] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.452112] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Installing: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libmotor_thrust_plugin.so\n'}
+[12.457318] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libmotor_thrust_plugin.so" to ""\n'}
+[12.458543] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libgrasp_attach_plugin.so\n'}
+[12.458651] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/package_run_dependencies/aerial_grasping_gazebo\n'}
+[12.458708] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/parent_prefix_path/aerial_grasping_gazebo\n'}
+[12.458742] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/ament_prefix_path.sh\n'}
+[12.458790] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/ament_prefix_path.dsv\n'}
+[12.458845] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/path.sh\n'}
+[12.458878] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/path.dsv\n'}
+[12.458908] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.bash\n'}
+[12.458938] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.sh\n'}
+[12.458983] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.zsh\n'}
+[12.459013] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.dsv\n'}
+[12.459044] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Installing: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/package.dsv\n'}
+[12.459096] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/packages/aerial_grasping_gazebo\n'}
+[12.459150] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/cmake/aerial_grasping_gazeboConfig.cmake\n'}
+[12.459201] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/cmake/aerial_grasping_gazeboConfig-version.cmake\n'}
+[12.459239] (aerial_grasping_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/package.xml\n'}
+[12.460410] (aerial_grasping_gazebo) CommandEnded: {'returncode': 0}
+[12.469124] (aerial_grasping_gazebo) JobEnded: {'identifier': 'aerial_grasping_gazebo', 'rc': 0}
+[12.469552] (-) EventReactorShutdown: {}

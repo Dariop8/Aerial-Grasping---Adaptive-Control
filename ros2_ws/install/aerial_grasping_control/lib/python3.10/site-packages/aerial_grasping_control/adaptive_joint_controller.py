@@ -39,7 +39,7 @@ class AdaptiveJointController(Node):
 
         self.command_pub = self.create_publisher(
             Float64MultiArray,
-            '/adaptive_effort_controller/commands',
+            '/arm_effort_controller/commands',
             10
         )
 
@@ -48,11 +48,11 @@ class AdaptiveJointController(Node):
 
         # Controller gains.
         # These are the simplified Phi and Lambda matrices from the paper.
-        self.Phi = np.diag([1.2, 1.2])
-        self.Lambda = np.diag([3.0, 3.0])
+        self.Phi = np.diag([0.6, 0.6]) #self.Phi = np.diag([1.2, 1.2])
+        self.Lambda = np.diag([1.0, 1.0]) #self.Lambda = np.diag([3.0, 3.0])
 
         # Adaptive gains K_hat_i.
-        self.K_hat = np.array([0.1, 0.1, 0.1], dtype=float)
+        self.K_hat = np.array([0.01, 0.01, 0.01], dtype=float) #self.K_hat = np.array([0.1, 0.1, 0.1], dtype=float)
 
         # Leakage terms nu_i from the adaptive law.
         self.nu = np.array([2.0, 5.0, 5.0], dtype=float)
@@ -61,11 +61,13 @@ class AdaptiveJointController(Node):
         self.delta = 0.1
 
         # Torque saturation for safety.
-        self.tau_limit = 10.0
+        self.tau_limit = 2.0
 
         self.timer = self.create_timer(0.01, self.control_loop)  # 100 Hz
 
         self.get_logger().info('Adaptive joint controller started')
+
+        self.current_phase = None
 
     def joint_state_callback(self, msg):
         name_to_index = {name: i for i, name in enumerate(msg.name)}
@@ -100,47 +102,83 @@ class AdaptiveJointController(Node):
 
         return q_des, q_dot_des
 
+    # def desired_trajectory(self, t):
+    #     q_home = np.array([deg2rad(0.0), deg2rad(0.0)])
+    #     q_pre_grasp = np.array([deg2rad(45.0), deg2rad(45.0)])
+    #     q_grasp = np.array([deg2rad(45.0), deg2rad(15.0)])
+    #     q_retract = np.array([deg2rad(45.0), deg2rad(60.0)])
+
+    #     if t < 2.0:
+    #         return q_home, np.zeros(2), "HOME_HOLD"
+
+    #     elif t < 6.0:
+    #         q_des, q_dot_des = self.interpolate(
+    #             q_home,
+    #             q_pre_grasp,
+    #             t,
+    #             t_start=2.0,
+    #             duration=4.0
+    #         )
+    #         return q_des, q_dot_des, "MOVE_TO_PRE_GRASP"
+
+    #     elif t < 8.0:
+    #         q_des, q_dot_des = self.interpolate(
+    #             q_pre_grasp,
+    #             q_grasp,
+    #             t,
+    #             t_start=6.0,
+    #             duration=2.0
+    #         )
+    #         return q_des, q_dot_des, "MOVE_TO_GRASP"
+
+    #     elif t < 10.0:
+    #         return q_grasp, np.zeros(2), "GRASP_HOLD"
+
+    #     elif t < 13.0:
+    #         q_des, q_dot_des = self.interpolate(
+    #             q_grasp,
+    #             q_retract,
+    #             t,
+    #             t_start=10.0,
+    #             duration=3.0
+    #         )
+    #         return q_des, q_dot_des, "RETRACT"
+
+    #     else:
+    #         return q_retract, np.zeros(2), "RETRACT_HOLD"
+
     def desired_trajectory(self, t):
-        q_home = np.array([deg2rad(0.0), deg2rad(60.0)])
-        q_pre_grasp = np.array([deg2rad(45.0), deg2rad(45.0)])
-        q_grasp = np.array([deg2rad(45.0), deg2rad(15.0)])
-        q_retract = np.array([deg2rad(45.0), deg2rad(60.0)])
+        q_home = np.array([deg2rad(0.0), deg2rad(0.0)])
+        q_test = np.array([deg2rad(10.0), deg2rad(0.0)])
 
         if t < 2.0:
-            return q_home, np.zeros(2)
+            return q_home, np.zeros(2), "HOME_HOLD"
 
         elif t < 6.0:
-            return self.interpolate(
+            q_des, q_dot_des = self.interpolate(
                 q_home,
-                q_pre_grasp,
+                q_test,
                 t,
                 t_start=2.0,
                 duration=4.0
             )
-
-        elif t < 8.0:
-            return self.interpolate(
-                q_pre_grasp,
-                q_grasp,
-                t,
-                t_start=6.0,
-                duration=2.0
-            )
+            return q_des, q_dot_des, "MOVE_JOINT1_POSITIVE"
 
         elif t < 10.0:
-            return q_grasp, np.zeros(2)
+            return q_test, np.zeros(2), "HOLD_JOINT1_POSITIVE"
 
-        elif t < 13.0:
-            return self.interpolate(
-                q_grasp,
-                q_retract,
+        elif t < 14.0:
+            q_des, q_dot_des = self.interpolate(
+                q_test,
+                q_home,
                 t,
                 t_start=10.0,
-                duration=3.0
+                duration=4.0
             )
+            return q_des, q_dot_des, "RETURN_HOME"
 
         else:
-            return q_retract, np.zeros(2)
+            return q_home, np.zeros(2), "HOME_HOLD_FINAL"
 
     def control_loop(self):
         if not self.have_joint_state:
@@ -154,7 +192,12 @@ class AdaptiveJointController(Node):
         if dt <= 0.0 or dt > 0.1:
             return
 
-        q_des, q_dot_des = self.desired_trajectory(t)
+        # q_des, q_dot_des = self.desired_trajectory(t)
+        q_des, q_dot_des, phase = self.desired_trajectory(t)
+
+        if phase != self.current_phase:
+            self.current_phase = phase
+            self.get_logger().info(f'===== NEW PHASE: {phase} at t={t:.2f}s =====')
 
         # Paper convention:
         # e = chi - chi_d
@@ -188,7 +231,8 @@ class AdaptiveJointController(Node):
         # Smooth version of s / ||s|| from Remark 1 in the paper.
         s_direction = s / math.sqrt(s_norm**2 + self.delta)
 
-        tau = -self.Lambda @ s - rho * s_direction
+        # tau = -self.Lambda @ s - rho * s_direction
+        tau = self.Lambda @ s + rho * s_direction
 
         tau = np.clip(tau, -self.tau_limit, self.tau_limit)
 
@@ -196,9 +240,28 @@ class AdaptiveJointController(Node):
         msg.data = tau.tolist()
         self.command_pub.publish(msg)
 
-        if int(t * 10) % 20 == 0:
+        # if int(t * 10) % 20 == 0:
+        #     self.get_logger().info(
+        #         f't={t:.2f} q={self.q} q_des={q_des} tau={tau} K_hat={self.K_hat}'
+        #     )
+
+        if not hasattr(self, 'last_log_time'):
+            self.last_log_time = 0.0
+
+        if t - self.last_log_time > 1.0:
+            self.last_log_time = t
+            # self.get_logger().info(
+            #     f't={t:.2f} q={self.q} q_des={q_des} tau={tau} K_hat={self.K_hat}'
+            # )
+            error_norm = np.linalg.norm(e)
+
             self.get_logger().info(
-                f't={t:.2f} q={self.q} q_des={q_des} tau={tau} K_hat={self.K_hat}'
+                f'phase={phase} | t={t:.2f} | '
+                f'q={np.round(self.q, 3)} | '
+                f'q_des={np.round(q_des, 3)} | '
+                f'e_norm={error_norm:.3f} | '
+                f'tau={np.round(tau, 3)} | '
+                f'K_hat={np.round(self.K_hat, 3)}'
             )
 
 

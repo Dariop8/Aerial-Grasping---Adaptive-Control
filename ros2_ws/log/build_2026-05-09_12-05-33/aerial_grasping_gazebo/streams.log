@@ -1,0 +1,22 @@
+[0.312s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo -- -j22 -l22
+[0.381s] [100%] Built target motor_thrust_plugin
+[0.392s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo -- -j22 -l22
+[0.394s] Invoking command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo
+[0.400s] -- Install configuration: ""
+[0.400s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libmotor_thrust_plugin.so
+[0.400s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/package_run_dependencies/aerial_grasping_gazebo
+[0.400s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/parent_prefix_path/aerial_grasping_gazebo
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/ament_prefix_path.sh
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/ament_prefix_path.dsv
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/path.sh
+[0.401s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/environment/path.dsv
+[0.402s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.bash
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.sh
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.zsh
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/local_setup.dsv
+[0.403s] -- Installing: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/package.dsv
+[0.403s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/ament_index/resource_index/packages/aerial_grasping_gazebo
+[0.404s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/cmake/aerial_grasping_gazeboConfig.cmake
+[0.404s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/cmake/aerial_grasping_gazeboConfig-version.cmake
+[0.404s] -- Up-to-date: /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/share/aerial_grasping_gazebo/package.xml
+[0.404s] Invoked command in '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_gazebo

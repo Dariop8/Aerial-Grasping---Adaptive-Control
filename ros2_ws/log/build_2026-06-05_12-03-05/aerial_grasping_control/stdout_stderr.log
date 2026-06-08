@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/dependency_links.txt
+writing entry points to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/entry_points.txt
+writing requirements to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/requires.txt
+writing top-level names to ../../build/aerial_grasping_control/aerial_grasping_control.egg-info/top_level.txt
+reading manifest file '../../build/aerial_grasping_control/aerial_grasping_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/aerial_grasping_control/aerial_grasping_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying aerial_grasping_control/full_adaptive_controller.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/build/lib/aerial_grasping_control
+running install
+running install_lib
+copying /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/build/lib/aerial_grasping_control/full_adaptive_controller.py -> /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control
+byte-compiling /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control/full_adaptive_controller.py to full_adaptive_controller.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/aerial_grasping_control/aerial_grasping_control.egg-info to /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/python3.10/site-packages/aerial_grasping_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing adaptive_joint_controller script to /home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_control/lib/aerial_grasping_control
+writing list of installed files to '/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_control/install.log'

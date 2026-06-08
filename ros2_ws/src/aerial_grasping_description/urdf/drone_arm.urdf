@@ -1,9 +1,4 @@
-<?xml version="1.0"?>
 <robot name="aerial_robot">
-
-  <!-- ===================== -->
-  <!-- Materials -->
-  <!-- ===================== -->
 
   <material name="black">
     <color rgba="0.02 0.02 0.02 1"/>
@@ -21,26 +16,11 @@
     <color rgba="1.0 0.75 0.0 1"/>
   </material>
 
-
-  <!-- ===================== -->
-  <!-- Fixed world frame -->
-  <!-- ===================== -->
-
-  <link name="world"/>
-
-  <joint name="world_to_base" type="fixed">
-    <parent link="world"/>
-    <child link="base_link"/>
-    <origin xyz="0 0 1.0" rpy="0 0 0"/>
-  </joint>
-
-
-  <!-- ===================== -->
-  <!-- Base / drone body -->
-  <!-- ===================== -->
+  <material name="gray">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
 
   <link name="base_link">
-
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="2.4"/>
@@ -51,11 +31,12 @@
     </inertial>
 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
       <geometry>
-        <box size="0.45 0.45 0.08"/>
+        <mesh filename="package://aerial_grasping_description/meshes/droneModel_binary.stl"
+              scale="0.005 0.005 0.005"/>
       </geometry>
-      <material name="black"/>
+      <material name="gray"/>
     </visual>
 
     <collision>
@@ -64,189 +45,135 @@
         <box size="0.45 0.45 0.08"/>
       </geometry>
     </collision>
-
   </link>
 
-
-  <!-- ===================== -->
-  <!-- Decorative drone arms -->
-  <!-- fixed to base_link -->
-  <!-- ===================== -->
-
-  <link name="arm_x">
+  <link name="rotor_1_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.15"/>
+      <mass value="0.03"/>
       <inertia
-        ixx="0.0002" ixy="0.0" ixz="0.0"
-        iyy="0.0060" iyz="0.0"
-        izz="0.0060"/>
+        ixx="0.00002" ixy="0.0" ixz="0.0"
+        iyy="0.00002" iyz="0.0"
+        izz="0.00004"/>
     </inertial>
 
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.85 0.04 0.035"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
       <material name="yellow"/>
     </visual>
 
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.85 0.04 0.035"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
     </collision>
   </link>
 
-  <joint name="base_to_arm_x" type="fixed">
+  <joint name="base_to_rotor_1" type="fixed">
     <parent link="base_link"/>
-    <child link="arm_x"/>
-    <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    <child link="rotor_1_link"/>
+    <origin xyz="0.25 0.25 0.05" rpy="0 0 0"/>
   </joint>
 
-
-  <link name="arm_y">
+  <link name="rotor_2_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.15"/>
+      <mass value="0.03"/>
       <inertia
-        ixx="0.0060" ixy="0.0" ixz="0.0"
-        iyy="0.0002" iyz="0.0"
-        izz="0.0060"/>
+        ixx="0.00002" ixy="0.0" ixz="0.0"
+        iyy="0.00002" iyz="0.0"
+        izz="0.00004"/>
     </inertial>
 
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.85 0.035"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
       <material name="yellow"/>
     </visual>
 
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.85 0.035"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
     </collision>
   </link>
 
-  <joint name="base_to_arm_y" type="fixed">
+  <joint name="base_to_rotor_2" type="fixed">
     <parent link="base_link"/>
-    <child link="arm_y"/>
-    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+    <child link="rotor_2_link"/>
+    <origin xyz="-0.25 0.25 0.05" rpy="0 0 0"/>
   </joint>
 
-
-  <!-- ===================== -->
-  <!-- Simple propellers -->
-  <!-- visual only, fixed -->
-  <!-- ===================== -->
-
-  <link name="propeller_1">
+  <link name="rotor_3_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.03"/>
-      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.00004"/>
+      <inertia
+        ixx="0.00002" ixy="0.0" ixz="0.0"
+        iyy="0.00002" iyz="0.0"
+        izz="0.00004"/>
     </inertial>
+
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.09" length="0.01"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
-      <material name="blue"/>
+      <material name="yellow"/>
     </visual>
+
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.09" length="0.01"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
     </collision>
   </link>
 
-  <joint name="base_to_propeller_1" type="fixed">
+  <joint name="base_to_rotor_3" type="fixed">
     <parent link="base_link"/>
-    <child link="propeller_1"/>
-    <origin xyz="0.38 0.38 0.07" rpy="0 0 0"/>
+    <child link="rotor_3_link"/>
+    <origin xyz="-0.25 -0.25 0.05" rpy="0 0 0"/>
   </joint>
 
-
-  <link name="propeller_2">
+  <link name="rotor_4_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.03"/>
-      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.00004"/>
+      <inertia
+        ixx="0.00002" ixy="0.0" ixz="0.0"
+        iyy="0.00002" iyz="0.0"
+        izz="0.00004"/>
     </inertial>
+
     <visual>
-      <geometry>
-        <cylinder radius="0.09" length="0.01"/>
-      </geometry>
-      <material name="blue"/>
-    </visual>
-    <collision>
-      <geometry>
-        <cylinder radius="0.09" length="0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_to_propeller_2" type="fixed">
-    <parent link="base_link"/>
-    <child link="propeller_2"/>
-    <origin xyz="-0.38 0.38 0.07" rpy="0 0 0"/>
-  </joint>
-
-
-  <link name="propeller_3">
-    <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.03"/>
-      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.00004"/>
-    </inertial>
-    <visual>
       <geometry>
-        <cylinder radius="0.09" length="0.01"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
-      <material name="blue"/>
+      <material name="yellow"/>
     </visual>
+
     <collision>
-      <geometry>
-        <cylinder radius="0.09" length="0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_to_propeller_3" type="fixed">
-    <parent link="base_link"/>
-    <child link="propeller_3"/>
-    <origin xyz="-0.38 -0.38 0.07" rpy="0 0 0"/>
-  </joint>
-
-
-  <link name="propeller_4">
-    <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.03"/>
-      <inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.00004"/>
-    </inertial>
-    <visual>
       <geometry>
-        <cylinder radius="0.09" length="0.01"/>
-      </geometry>
-      <material name="blue"/>
-    </visual>
-    <collision>
-      <geometry>
-        <cylinder radius="0.09" length="0.01"/>
+        <cylinder radius="0.07" length="0.01"/>
       </geometry>
     </collision>
   </link>
 
-  <joint name="base_to_propeller_4" type="fixed">
+  <joint name="base_to_rotor_4" type="fixed">
     <parent link="base_link"/>
-    <child link="propeller_4"/>
-    <origin xyz="0.38 -0.38 0.07" rpy="0 0 0"/>
+    <child link="rotor_4_link"/>
+    <origin xyz="0.25 -0.25 0.05" rpy="0 0 0"/>
   </joint>
-
-
-  <!-- ===================== -->
-  <!-- Arm joint 1 -->
-  <!-- ===================== -->
 
   <joint name="joint1" type="revolute">
     <parent link="base_link"/>
@@ -258,7 +185,6 @@
   </joint>
 
   <link name="link1">
-
     <inertial>
       <origin xyz="0 0 -0.05" rpy="0 0 0"/>
       <mass value="0.15"/>
@@ -282,13 +208,7 @@
         <box size="0.04 0.04 0.10"/>
       </geometry>
     </collision>
-
   </link>
-
-
-  <!-- ===================== -->
-  <!-- Arm joint 2 -->
-  <!-- ===================== -->
 
   <joint name="joint2" type="revolute">
     <parent link="link1"/>
@@ -300,7 +220,6 @@
   </joint>
 
   <link name="link2">
-
     <inertial>
       <origin xyz="0 0 -0.185" rpy="0 0 0"/>
       <mass value="0.29"/>
@@ -324,13 +243,7 @@
         <box size="0.035 0.035 0.37"/>
       </geometry>
     </collision>
-
   </link>
-
-
-  <!-- ===================== -->
-  <!-- Gripper -->
-  <!-- ===================== -->
 
   <joint name="gripper_joint" type="fixed">
     <parent link="link2"/>
@@ -338,8 +251,11 @@
     <origin xyz="0 0 -0.39" rpy="0 0 0"/>
   </joint>
 
-  <link name="gripper">
+  <gazebo reference="gripper_joint">
+    <preserveFixedJoint>true</preserveFixedJoint>
+  </gazebo>
 
+  <link name="gripper">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.10"/>
@@ -363,13 +279,7 @@
         <box size="0.18 0.04 0.04"/>
       </geometry>
     </collision>
-
   </link>
-
-
-  <!-- ===================== -->
-  <!-- ros2_control for Gazebo -->
-  <!-- ===================== -->
 
   <ros2_control name="GazeboSystem" type="system">
     <hardware>
@@ -397,14 +307,50 @@
     </joint>
   </ros2_control>
 
+  <gazebo>
+    <plugin
+      name="motor_thrust_plugin"
+      filename="/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libmotor_thrust_plugin.so">
+      <link_name>base_link</link_name>
+    </plugin>
+  </gazebo>
 
-  <!-- ===================== -->
-  <!-- Gazebo ros2_control plugin -->
-  <!-- ===================== -->
+  <gazebo>
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>odom:=/drone/odom</remapping>
+      </ros>
+      <body_name>base_link</body_name>
+      <frame_name>world</frame_name>
+      <update_rate>100.0</update_rate>
+      <xyz_offset>0 0 0</xyz_offset>
+      <rpy_offset>0 0 0</rpy_offset>
+      <gaussian_noise>0.0</gaussian_noise>
+    </plugin>
+  </gazebo>
 
   <gazebo>
     <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-      <parameters>/home/dario/Desktop/aerial_project/ros2_ws/src/aerial_grasping_description/config/controllers.yaml</parameters>
+      <parameters>/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_description/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin
+      name="grasp_attach_plugin"
+      filename="/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/install/aerial_grasping_gazebo/lib/libgrasp_attach_plugin.so">
+
+      <gripper_link>gripper</gripper_link>
+      <object_model>grasp_object</object_model>
+      <object_link>object_link</object_link>
+
+      <attach_distance>0.2</attach_distance>
+      <auto_attach>true</auto_attach>
+
+      <!-- Utile per debug/reset -->
+      <detach_on_command>true</detach_on_command>
+
     </plugin>
   </gazebo>
 

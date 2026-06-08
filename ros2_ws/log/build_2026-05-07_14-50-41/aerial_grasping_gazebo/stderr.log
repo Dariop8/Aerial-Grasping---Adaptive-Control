@@ -1,0 +1,18 @@
+[33mCMake Warning at CMakeLists.txt:24 (add_library):
+  Cannot generate a safe runtime search path for target motor_thrust_plugin
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/dario/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[01m[K/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo/src/motor_thrust_plugin.cpp:[m[K In destructor ‘[01m[Kvirtual gazebo::MotorThrustPlugin::~MotorThrustPlugin()[m[K’:
+[01m[K/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/src/aerial_grasping_gazebo/src/motor_thrust_plugin.cpp:137:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Node[m[K’ {aka ‘[01m[Kclass rclcpp::Node[m[K’} has no member named ‘[01m[Kshutdown[m[K’
+  137 |       node_->[01;31m[Kshutdown[m[K();
+      |              [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_thrust_plugin.dir/build.make:76: CMakeFiles/motor_thrust_plugin.dir/src/motor_thrust_plugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_thrust_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

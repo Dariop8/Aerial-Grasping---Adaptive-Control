@@ -1,0 +1,22 @@
+[33mCMake Warning at CMakeLists.txt:24 (add_library):
+  Cannot generate a safe runtime search path for target motor_thrust_plugin
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/dario/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:43 (add_library):
+  Cannot generate a safe runtime search path for target grasp_attach_plugin
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/dario/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m

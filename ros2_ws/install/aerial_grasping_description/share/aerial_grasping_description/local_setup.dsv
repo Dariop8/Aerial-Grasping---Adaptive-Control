@@ -1,1 +1,2 @@
-/home/dario/Desktop/Aerial-Grasping---Adaptive-Control/ros2_ws/build/aerial_grasping_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/aerial_grasping_description/environment/ament_prefix_path.sh
+source;share/aerial_grasping_description/environment/path.sh
